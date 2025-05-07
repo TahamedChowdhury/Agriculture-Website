@@ -1,0 +1,60 @@
+/* Contact page specific styles */
+
+/* Contact Section */
+.contact-section {
+    padding: var(--spacing-16) 0;
+  }
+  
+  .contact-info {
+    padding: var(--spacing-6);
+  }
+  
+  .contact-info h2 {
+    margin-bottom: var(--spacing-6);
+    color: var(--color-primary);
+  }
+  
+  .contact-info > p {
+    margin-bottom: var(--spacing-8);
+    color: var(--color-gray-600);
+  }
+  
+  .contact-form-container {
+    background-color: var(--color-white);
+    padding: var(--spacing-8);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .contact-form-container h2 {
+    margin-bottom: var(--spacing-6);
+    color: var(--color-primary);
+  }
+  
+  /* Map Section */
+  .map-section {
+    padding: var(--spacing-16) 0;
+    background-color: var(--color-gray-100);
+  }
+  
+  /* FAQ Preview Section */
+  .faq-preview {
+    padding: var(--spacing-16) 0;
+  }
+  
+  .faq-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto var(--spacing-8);
+  }
+  
+  .faq-preview-list {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-8);
+  }
+  
+  .faq-preview .btn-secondary {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+  }

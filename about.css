@@ -1,0 +1,80 @@
+/* About page specific styles */
+
+/* Our Story Section */
+.our-story {
+    padding: var(--spacing-16) 0;
+  }
+  
+  .story-image {
+    height: 400px;
+    background-image: url(potato-field-4357002_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .story-text {
+    padding: var(--spacing-6);
+  }
+  
+  .story-text h2 {
+    margin-bottom: var(--spacing-4);
+    color: var(--color-primary);
+  }
+  
+  /* Mission Vision Section */
+  .mission-vision {
+    padding: var(--spacing-16) 0;
+    background-color: var(--color-gray-100);
+  }
+  
+  .mission-box,
+  .vision-box {
+    background-color: var(--color-white);
+    padding: var(--spacing-8);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow);
+    height: 100%;
+  }
+  
+  .mission-box h2,
+  .vision-box h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-4);
+    position: relative;
+    padding-bottom: var(--spacing-3);
+  }
+  
+  .mission-box h2::after,
+  .vision-box h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-primary);
+  }
+  
+  /* Values Section */
+  .values {
+    padding: var(--spacing-16) 0;
+  }
+  
+  /* Team Section */
+  .team {
+    padding: var(--spacing-16) 0;
+    background-color: var(--color-gray-100);
+  }
+  
+  /* Partners Section */
+  .partners {
+    padding: var(--spacing-16) 0;
+  }
+  
+  .partners-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto var(--spacing-8);
+  }

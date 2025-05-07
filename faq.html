@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - GreenHarvest</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="typography.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🌾</span>
+                    <span class="logo-text">GreenHarvest</span>
+                </a>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-toggle-label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html" class="active">FAQ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Frequently Asked Questions</h1>
+                <p class="subtitle">Find answers to common questions about sustainable agriculture and our services</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-categories">
+                    <button class="category-btn active" data-category="all">All Questions</button>
+                    <button class="category-btn" data-category="services">Our Services</button>
+                    <button class="category-btn" data-category="sustainable">Sustainable Farming</button>
+                    <button class="category-btn" data-category="certification">Certification</button>
+                    <button class="category-btn" data-category="equipment">Equipment</button>
+                </div>
+
+                <div class="faq-list">
+                    <!-- Services Questions -->
+                    <div class="faq-item" data-category="services">
+                        <div class="faq-question">
+                            <h3><i class="fa-solid fa-lightbulb"></i>What services does GreenHarvest offer?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>GreenHarvest offers a comprehensive range of agricultural services including sustainable farming consulting, soil analysis and improvement, equipment recommendations and optimization, water management solutions, organic certification guidance, and crop planning.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="services">
+                        <div class="faq-question">
+                              <h3><i class="fa-solid fa-lightbulb"></i>How do I get started with your services?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The process begins with a consultation where we assess your current farming practices, goals, and challenges. Based on this assessment, we'll develop a customized plan to help you achieve your sustainable farming objectives. You can schedule a consultation by contacting us through our website, by phone, or by email.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="services">
+                        <div class="faq-question">
+                            <h3><i class="fa-solid fa-lightbulb"></i>Do you work with farms of all sizes?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we work with farms of all sizes, from small family operations to large commercial enterprises. Our solutions are scalable and customized to meet the specific needs and resources of each farm.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="services">
+                        <div class="faq-question">
+                            <h3><i class="fa-solid fa-lightbulb"></i>What regions do you service?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We currently provide services throughout California, Oregon, Washington, and Idaho. However, we offer remote consulting services to farmers nationwide and are continuously expanding our service areas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sustainable Farming Questions -->
+                    <div class="faq-item" data-category="sustainable">
+                        <div class="faq-question">
+                           <h3><i class="fa-solid fa-lightbulb"></i>What is sustainable farming?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sustainable farming refers to agricultural practices that meet current food needs without compromising the ability of future generations to meet their own needs. It involves methods that protect and enhance soil health, conserve water, promote biodiversity, reduce reliance on synthetic inputs, and support rural communities while remaining economically viable.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="sustainable">
+                        <div class="faq-question">
+                            <h3><i class="fa-solid fa-lightbulb"></i>How long does it take to transition to sustainable practices?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>The transition timeline varies depending on your current practices, soil conditions, and specific goals. Generally, significant improvements in soil health can be seen within 1-3 years of implementing sustainable practices. Full transition to a fully sustainable system typically takes 3-5 years, but you'll see incremental benefits throughout the process.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="sustainable">
+                        <div class="faq-question">
+                             <h3><i class="fa-solid fa-lightbulb"></i>Will transitioning to sustainable farming affect my yields?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>During the initial transition period, you might experience a temporary decrease in yields as the soil ecosystem rebalances. However, many farmers see yields return to or exceed previous levels within a few years as soil health improves. Additionally, sustainable practices often lead to greater resilience against weather extremes, potentially stabilizing yields over time.</p>
+                        </div>
+                    </div>
+
+                    <!-- Certification Questions -->
+                    <div class="faq-item" data-category="certification">
+                        <div class="faq-question">
+                            <h3><i class="fa-solid fa-lightbulb"></i>What certifications do you help farms obtain?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We assist farms in obtaining various certifications including USDA Organic, Regenerative Organic Certified, Certified Naturally Grown, Non-GMO Project Verified, and Global G.A.P. We can help determine which certifications align with your farming practices and market goals.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="certification">
+                        <div class="faq-question">
+                            <h3><i class="fa-solid fa-lightbulb"></i>How long does the organic certification process take?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>For USDA Organic certification, land must be managed according to organic standards for 36 months prior to harvest. Once this transition period is complete, the certification process itself typically takes 3-6 months, including application, inspection, and review. Our guidance can help streamline this process and ensure you're well-prepared for each step.</p>
+                        </div>
+                    </div>
+
+                    <!-- Equipment Questions -->
+                    <div class="faq-item" data-category="equipment">
+                        <div class="faq-question">
+                             <h3><i class="fa-solid fa-lightbulb"></i>Do you sell farming equipment?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We don't sell equipment directly, but we provide expert recommendations based on your specific needs and connect you with trusted suppliers. Our equipment specialists can help you identify the most appropriate tools for your sustainable farming practices, considering factors like farm size, soil type, crops, and budget.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="equipment">
+                        <div class="faq-question">
+                           <h3><i class="fa-solid fa-lightbulb"></i>What equipment is essential for sustainable farming?</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Essential equipment varies based on your specific operation, but often includes implements for reduced tillage or no-till practices, precision application tools for efficient resource use, cover crop management equipment, and tools for mechanical weed control. Our team can help you prioritize equipment investments based on your sustainability goals and budget constraints.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="not-found-question">
+            <div class="container">
+                <h2>Didn't Find Your Answer?</h2>
+                <p>Our team is here to help with any additional questions you might have.</p>
+                <div class="question-actions">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="#" class="btn btn-secondary">Search All FAQs</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">🌾</span>
+                    <span class="logo-text">GreenHarvest</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Sustainable Farming</a></li>
+                            <li><a href="#">Equipment</a></li>
+                            <li><a href="#">Soil Analysis</a></li>
+                            <li><a href="#">Organic Certification</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <address>
+                            <p>123 Farm Road</p>
+                            <p>Harvest Valley, CA 94123</p>
+                            <p>Phone: (555) 123-4567</p>
+                            <p>Email: info@greenharvest.com</p>
+                        </address>
+                    </div>
+                </div>
+                <div class="newsletter-signup">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for the latest farming tips and news.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Md Tahamed Chowdhury. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link">FB</a>
+                    <a href="#" class="social-link">TW</a>
+                    <a href="#" class="social-link">IG</a>
+                    <a href="#" class="social-link">YT</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* Home page specific styles */
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 80vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/2933243/pexels-photo-2933243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-16);
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    padding: var(--spacing-4);
+    animation: fadeUp 1s var(--transition-timing);
+  }
+  
+  .hero h1 {
+    font-size: var(--font-size-5xl);
+    margin-bottom: var(--spacing-4);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero p {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-8);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      min-height: 500px;
+    }
+    
+    .hero h1 {
+      font-size: var(--font-size-3xl);
+    }
+    
+    .hero p {
+      font-size: var(--font-size-lg);
+    }
+  }
+  
+  /* Features Section */
+  .features {
+    position: relative;
+    padding: var(--spacing-16) 0;
+    background-color: var(--color-gray-100);
+  }
+  
+  /* About Preview Section */
+  .about-preview {
+    padding: var(--spacing-20) 0;
+  }
+  
+  .about-preview-image {
+    height: 400px;
+    background-image: url('https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .about-preview-text {
+    padding: var(--spacing-6);
+  }
+  
+  .about-preview-text h2 {
+    margin-bottom: var(--spacing-4);
+    color: var(--color-primary);
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: var(--spacing-20) 0;
+    background-color: var(--color-gray-100);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .testimonials::before {
+    content: '"';
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 20rem;
+    color: var(--color-gray-200);
+    font-family: var(--font-family-heading);
+    line-height: 0;
+    z-index: 0;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    padding: var(--spacing-16) 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(farmer-8294716_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--color-white);
+    text-align: center;
+  }
+  
+  .cta-section h2 {
+    margin-bottom: var(--spacing-4);
+    font-size: var(--font-size-3xl);
+  }
+  
+  .cta-section p {
+    margin-bottom: var(--spacing-8);
+    font-size: var(--font-size-lg);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }

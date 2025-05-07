@@ -1,0 +1,261 @@
+/* Animation styles */
+
+/* Fade In */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn var(--transition-normal) var(--transition-timing);
+  }
+  
+  /* Fade Up */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-up {
+    animation: fadeUp var(--transition-normal) var(--transition-timing);
+  }
+  
+  /* Staggered animations for feature cards */
+  .features-grid .feature-card {
+    opacity: 0;
+    animation: fadeUp var(--transition-normal) var(--transition-timing) forwards;
+  }
+  
+  .features-grid .feature-card:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .features-grid .feature-card:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .features-grid .feature-card:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  .features-grid .feature-card:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  
+  /* Pulse effect for call-to-action buttons */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: var(--shadow);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: var(--shadow-lg);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: var(--shadow);
+    }
+  }
+  
+  .pulse {
+    animation: pulse 2s infinite var(--transition-timing);
+  }
+  
+  .cta-section .btn-primary {
+    animation: pulse 2s infinite var(--transition-timing);
+  }
+  
+  /* Spin for loading states */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spin {
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Scale hover effects */
+  .scale-on-hover {
+    transition: transform var(--transition-normal) var(--transition-timing);
+  }
+  
+  .scale-on-hover:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Page transition effects */
+  .page-transition {
+    opacity: 0;
+    animation: fadeIn var(--transition-normal) var(--transition-timing) forwards;
+  }
+  
+  /* Subtle bounce effect */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .bounce {
+    animation: bounce 2s ease infinite;
+  }
+  
+  /* Image hover effects */
+  .image-scale {
+    overflow: hidden;
+  }
+  
+  .image-scale img {
+    transition: transform var(--transition-normal) var(--transition-timing);
+  }
+  
+  .image-scale:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Border color transition */
+  .border-transition {
+    border: 2px solid transparent;
+    transition: border-color var(--transition-normal) var(--transition-timing);
+  }
+  
+  .border-transition:hover {
+    border-color: var(--color-primary);
+  }
+  
+  /* Text gradient animation */
+  @keyframes textGradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .gradient-text {
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent-dark), var(--color-primary));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textGradient 3s linear infinite;
+  }
+  
+  /* Shake animation for errors */
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    20%, 60% {
+      transform: translateX(-5px);
+    }
+    40%, 80% {
+      transform: translateX(5px);
+    }
+  }
+  
+  .shake {
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  /* Social link hover effect */
+  .social-link {
+    transition: transform var(--transition-fast) var(--transition-timing);
+  }
+  
+  .social-link:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Form focus animation */
+  input:focus,
+  textarea:focus,
+  select:focus {
+    animation: borderPulse 1.5s var(--transition-timing);
+  }
+  
+  @keyframes borderPulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(46, 125, 50, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 6px rgba(46, 125, 50, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(46, 125, 50, 0);
+    }
+  }
+  
+  /* FAQ toggle animation */
+  .faq-question:hover .toggle-icon {
+    transform: rotate(90deg);
+    color: var(--color-primary-dark);
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal) var(--transition-timing);
+  }
+  
+  .faq-item.open .faq-answer {
+    max-height: 500px;
+  }
+  
+  /* Page header background animation */
+  .page-header {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .page-header::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(46, 125, 50, 0.03) 0%, rgba(57, 128, 43, 0.788) 70%);
+    animation: rotate 30s linear infinite;
+    z-index: 0;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .page-header h1,
+  .page-header .subtitle {
+    position: relative;
+    z-index: 1;
+  }
